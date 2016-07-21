@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back"
+    tools:context="uni.ek.com.re_think.Activity2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to reThink"
+        android:id="@+id/textView"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_product"
+        android:layout_marginTop="65dp"
+        android:hint="Product"
+        android:textColor="#FFF"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFF"
+        android:id="@+id/btn_history"
+        android:layout_marginBottom="127dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btn_search"
+        android:layout_alignStart="@+id/btn_search" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Price"
+        android:textColor="#FFF"
+        android:id="@+id/et_price"
+        android:layout_below="@+id/et_product"
+        android:layout_alignLeft="@+id/et_product"
+        android:layout_alignStart="@+id/et_product" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Re-Think"
+        android:background="@color/red"
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_search"
+        android:layout_below="@+id/et_price"
+        android:layout_alignLeft="@+id/et_price"
+        android:layout_alignStart="@+id/et_price" />
+</RelativeLayout>
